@@ -142,7 +142,7 @@ export default async function Home() {
               No applications yet.
             </p>
           ) : (
-            recentApplications.map((app) => (
+            recentApplications.map((app : any) => (
               <Link
                 key={app.id}
                 href={`/applications/${app.id}`}

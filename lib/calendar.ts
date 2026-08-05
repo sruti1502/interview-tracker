@@ -12,8 +12,8 @@ export function convertApplicationsToEvents(
   applications: any[]
 ): CalendarEvent[] {
   return applications
-    .filter((app) => app.interviewDate)
-    .map((app) => ({
+    .filter((app : any) => app.interviewDate)
+    .map((app : any) => ({
       id: app.id,
       title: `${app.company} - ${app.role}`,
       start: new Date(app.interviewDate),

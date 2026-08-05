@@ -174,7 +174,7 @@ export default async function ApplicationsPage({
 
           <tbody>
 
-            {applications.map((app) => (
+            {applications.map((app : any) => (
 
               <tr
                 key={app.id}

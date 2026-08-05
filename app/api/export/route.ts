@@ -24,7 +24,7 @@ export async function GET() {
     });
 
   const rows = applications.map(
-    (app) => ({
+    (app : any) => ({
       Company: app.company,
       Role: app.role,
       Status: app.status,

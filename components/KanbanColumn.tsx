@@ -29,7 +29,7 @@ export default function KanbanColumn({
           </div>
         )}
 
-        {applications.map((app) => (
+        {applications.map((app : any) => (
           <div
             key={app.id}
             className="bg-white p-4 rounded-lg shadow border"

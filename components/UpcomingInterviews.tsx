@@ -40,7 +40,7 @@ export default function UpcomingInterviews({
 
       <div className="space-y-4">
 
-        {applications.map((app) => {
+        {applications.map((app : any) => {
 
           let interviewText = "";
 

@@ -24,7 +24,7 @@ export default function ApplicationTable({
     useState("ALL");
 
   const filtered =
-    applications.filter((app) => {
+    applications.filter((app : any) => {
       const matchesSearch =
         app.company
           .toLowerCase()
@@ -120,7 +120,7 @@ export default function ApplicationTable({
         </thead>
 
         <tbody>
-          {filtered.map((app) => (
+          {filtered.map((app : any) => (
             <tr key={app.id}>
               <td className="border p-2">
   <Link

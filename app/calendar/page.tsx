@@ -154,7 +154,7 @@ export default async function CalendarPage() {
         ) : (
           <div className="space-y-3">
 
-            {todayInterviews.map((app) => (
+            {todayInterviews.map((app : any) => (
 
               <div
                 key={app.id}
@@ -206,7 +206,7 @@ export default async function CalendarPage() {
 
             {applications
               .slice(0, 5)
-              .map((app) => (
+              .map((app : any) => (
 
                 <div
                   key={app.id}
