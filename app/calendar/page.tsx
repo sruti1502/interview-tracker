@@ -75,7 +75,7 @@ export default async function CalendarPage() {
             new Date()
       )
       .sort(
-        (a, b) =>
+        (a : any, b : any) =>
           new Date(
             a.interviewDate!
           ).getTime() -
