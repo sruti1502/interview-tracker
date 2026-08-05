@@ -108,19 +108,19 @@ npm install
 Create a `.env` file in the project root:
 
 ````env
-DATABASE_URL="postgresql://neondb_owner:npg_tMZJl3V0Ehqc@ep-falling-lake-adieem2k-pooler.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
-DIRECT_URL="postgresql://neondb_owner:npg_tMZJl3V0Ehqc@ep-falling-lake-adieem2k.c-2.us-east-1.aws.neon.tech/neondb?sslmode=require&channel_binding=require"
+DATABASE_URL=""
+DIRECT_URL=""
 
-GITHUB_ID="Ov23liZxCHE8ORqoFjt7"
-GITHUB_SECRET="5ca3ae6a2f59696fb06cb299b48513459b61a87d"
+GITHUB_ID=""
+GITHUB_SECRET=""
 
-NEXTAUTH_SECRET=Ssp@1501
-NEXTAUTH_URL=http://localhost:3000
+NEXTAUTH_SECRET=
+NEXTAUTH_URL=
 
-EMAIL_USER=srutiwork8@gmail.com
-EMAIL_PASS=bhtt zlko caur gkxg
+EMAIL_USER=
+EMAIL_PASS=
 
-CRON_SECRET=InterviewTracker2026
+CRON_SECRET=
 
 ### Database Setup
 
