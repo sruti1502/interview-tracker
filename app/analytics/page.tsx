@@ -2,6 +2,8 @@ import { prisma } from "@/lib/prisma";
 import { getCurrentUser } from "@/lib/getCurrentUser";
 import ApplicationChart from "@/components/ApplicationChart";
 
+
+
 export default async function AnalyticsPage() {
   const currentUser =
     await getCurrentUser();
@@ -23,25 +25,25 @@ export default async function AnalyticsPage() {
 
   const applied =
     applications.filter(
-      (a) =>
+      (a : any) =>
         a.status === "Applied"
     ).length;
 
   const interview =
     applications.filter(
-      (a) =>
+      (a : any) =>
         a.status === "Interview"
     ).length;
 
   const offer =
     applications.filter(
-      (a) =>
+      (a : any) =>
         a.status === "Offer"
     ).length;
 
   const rejected =
     applications.filter(
-      (a) =>
+      (a : any) =>
         a.status === "Rejected"
     ).length;
 
