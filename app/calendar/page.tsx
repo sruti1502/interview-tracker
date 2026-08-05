@@ -34,25 +34,25 @@ export default async function CalendarPage() {
     applications.length;
 
   const interviews = applications.filter(
-    (app) => app.interviewDate
+    (app : any) => app.interviewDate
   );
 
   const offers = applications.filter(
-    (app) => app.status === "Offer"
+    (app : any) => app.status === "Offer"
   );
 
   const rejected = applications.filter(
-    (app) => app.status === "Rejected"
+    (app : any) => app.status === "Rejected"
   );
 
   const applied = applications.filter(
-    (app) => app.status === "Applied"
+    (app : any) => app.status === "Applied"
   );
 
   const today = new Date();
 
   const todayInterviews = interviews.filter(
-    (app) => {
+    (app :any) => {
       if (!app.interviewDate) return false;
 
       const interview = new Date(
@@ -69,7 +69,7 @@ export default async function CalendarPage() {
   const upcomingInterviews =
     interviews
       .filter(
-        (app) =>
+        (app : any) =>
           app.interviewDate &&
           new Date(app.interviewDate) >=
             new Date()
